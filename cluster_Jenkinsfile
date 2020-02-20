@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Environment Test') {
+            steps {
+                echo 'Validating the Prerequisite'
+				echo '==========================='
+				echo ' EKSCTL VERSION'
+				sh 'eksctl version'
+				echo ' '
+				echo 'DOCKER VERSION'
+				sh 'docker --version'
+				echo ' '
+				echo 'kubectl vesrion'
+				sh 'kubectl version --short --client'
+				
+            }
+        }
+        stage('Create Cluster') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+    }
+}
