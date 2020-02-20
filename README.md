@@ -90,7 +90,7 @@ eksctl create cluster -f cluster.yaml
 * Label instances with blue and green application accordingly
 * Redirect live Traffic to green environment by updating the updating LB service with selector
 * 
-* .[!Kubernetes command](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+* [Kubernetes command](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 ```shell
 kubectl get nodes
 kubectl get pods
@@ -101,13 +101,13 @@ kubectl logs podname
 
 
 ### REFERENCE
- - .[!Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
- - .[!Kubernetes](https://kubernetes.io/)
- - .[!Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/)
- - .[!EKSCTL](https://eksctl.io/)
- - .[!AWS EKS](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
- - .[!cloudformation](https://docs.aws.amazon.com/cloudformation/)
- - .[!Hadolint](https://hackage.haskell.org/package/hadolint)
+ - [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+ - [Kubernetes](https://kubernetes.io/)
+ - [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/)
+ - [EKSCTL](https://eksctl.io/)
+ - [AWS EKS](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
+ - [cloudformation](https://docs.aws.amazon.com/cloudformation/)
+ - [Hadolint](https://hackage.haskell.org/package/hadolint)
  
 
 
