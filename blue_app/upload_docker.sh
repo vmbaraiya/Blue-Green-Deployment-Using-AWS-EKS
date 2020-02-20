@@ -11,8 +11,8 @@ dockerpath=capstoneblueappimage
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login --username vmbaraiya
-docker tag capstoneblueappimage vmbaraiya/capstoneblueappimage
+sudo docker login --username vmbaraiya
+sudo docker tag capstoneblueappimage vmbaraiya/capstoneblueappimage
 # Step 3:
 # Push image to a docker repository
-docker push vmbaraiya/capstoneblueappimage
+sudo docker push vmbaraiya/capstoneblueappimage

@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "vmbaraiya/capstonegreenappimage"
+        registry = "vmbaraiya/capstonebluegreenappimage"
         registryCredential = 'dockerhub'
     }
     agent any
@@ -46,6 +46,24 @@ pipeline {
             }
 
 	}
+
+	stage('Push image to DockerHub'){
+            parallel{
+                stage('Push Blue App Image'){
+                    steps{
+                        sh 'echo " push blueapp image to dockerhub"'
+                        sh 'cd blue_app && ./upload_docker.sh'
+                    }
+                }
+                stage('Push Green App Image'){
+                    steps{
+                        sh 'echo " push green app image to dockerhub"'
+                        sh 'cd green_app && ./upload_docker.sh'
+                    }
+                }
+            }
+        }
+
     }
 }
 
