@@ -68,14 +68,18 @@ pipeline {
             parallel{
                 stage('Deploy Blue App Image'){
                     steps{
+			withAWS(region:'us-east-2',credentials:'jenkinsAWSCred'){
                         sh 'echo "deploy blueapp image"'
                         sh 'cd blue_app && ./run_kubernetes.sh'
+			}
                     }
                 }
                 stage('Deploy Green App Image'){
                     steps{
+			withAWS(region:'us-east-2',credentials:'jenkinsAWSCred'){
                         sh 'echo "deploy greenapp image"'
                         sh 'cd green_app && ./run_kubernetes.sh'
+			}
                     }
                 }
             }
