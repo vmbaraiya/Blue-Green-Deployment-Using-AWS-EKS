@@ -1,5 +1,6 @@
 [![CircleCI](https://circleci.com/gh/vmbaraiya/Operationalize-a-ML-Microservice-API.svg?style=svg)](https://circleci.com/gh/vmbaraiya/Operationalize-a-ML-Microservice-API)   [![CircleCI](https://circleci.com/gh/vmbaraiya/Operationalize-a-ML-Microservice-API.svg?style=shield)](https://circleci.com/gh/vmbaraiya/Operationalize-a-ML-Microservice-API)
 
+[Pipeline Snapshot](https://github.com/vmbaraiya/Blue-Green-Deployment-Using-AWS-EKS/blob/master/Blue-Green_Deployment%20Pipeline.PNG)
 <p align="center">
     <h1 align="center">Blue-Green-Deployment Using CI/CD with AWS EKS</h1>
 </p>
@@ -22,7 +23,6 @@ project goal is to operationalize machine learning microservice using [kubernete
 * Kubernetes cluster use AWS Kubernetes as a Service.
 * Construct your pipeline in your GitHub repository, <b>GitOps</b>
 
-(https://github.com/vmbaraiya/Blue-Green-Deployment-Using-AWS-EKS/blob/master/Blue-Green_Deployment%20Pipeline.PNG?raw=true)
 
 
 **The final implementation of the project will showcase your abilities to implement blue/green deployment using docker, kubernete, AWS EKS.**
