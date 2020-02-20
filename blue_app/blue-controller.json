@@ -1,0 +1,37 @@
+{
+   "kind":"ReplicationController",
+   "apiVersion":"v1",
+   "metadata":{
+      "name":"blueapp",
+      "labels":{
+         "app":"blueapp"
+      }
+   },
+   "spec":{
+      "replicas":1,
+      "selector":{
+         "app":"blueapp"
+      },
+      "template":{
+         "metadata":{
+            "labels":{
+               "app":"blueapp"
+            }
+         },
+         "spec":{
+            "containers":[
+               {
+                  "name":"blueapp",
+                  "image":"vmbaraiya/capstoneblueappimage",
+                  "ports":[
+                     {
+                        "name":"http-server",
+                        "containerPort":80
+                     }
+                  ]
+               }
+            ]
+         }
+      }
+   }
+}
