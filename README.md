@@ -19,10 +19,8 @@ project goal is to operationalize machine learning microservice using [kubernete
 * Pushing the built Docker container(s) to the Docker repository (use AWS ECR/ Dockerhub);
 * Deploying these Docker container(s) to a small Kubernetes cluster. 
 * Use Ansible or CloudFormation to build your “infrastructure”; i.e., the Kubernetes Cluster
-* Kubernetes cluster use AWS Kubernetes as a Service.
+* Or we can also use AWS Kubernetes as a Service for Kubernetes cluste.
 * Construct your pipeline in your GitHub repository, <b>GitOps</b>
-
-
 
 **The final implementation of the project will showcase your abilities to implement blue/green deployment using docker, kubernete, AWS EKS.**
 
