@@ -22,6 +22,8 @@ project goal is to operationalize machine learning microservice using [kubernete
 * Kubernetes cluster use AWS Kubernetes as a Service.
 * Construct your pipeline in your GitHub repository, <b>GitOps</b>
 
+[Pipeline]https://github.com/vmbaraiya/Blue-Green-Deployment-Using-AWS-EKS/blob/master/Blue-Green_Deployment%20Pipeline.PNG?raw=true
+
 
 **The final implementation of the project will showcase your abilities to implement blue/green deployment using docker, kubernete, AWS EKS.**
 
