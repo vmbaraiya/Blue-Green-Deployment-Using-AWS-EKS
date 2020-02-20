@@ -76,13 +76,12 @@ sudo chmod +x /bin/hadolint
 
 ### NOTES
 
--- eksctl is a simple CLI tool for creating clusters on EKS - Amazon’s new managed Kubernetes service.
-It is written in Go,  uses <b>CloudFormation</b>. customize cluster by using a config file
+- **eksctl is a simple CLI tool for creating clusters on EKS - Amazon’s new managed Kubernetes service.It is written in Go,  uses <b>CloudFormation</b>. customize cluster by using a config file**
 ```shell
 eksctl create cluster -f cluster.yaml
 ```
   ***Important: In us-east-1 you are likely to get UnsupportedAvailabilityZoneException. 
-     If you do, copy the suggested zones and pass --zones flag, e.g. eksctl create cluster --region=us-east-1 --zones=us-east-1a,us-east-1b,us-east-1d. 
+     If you do, copy the suggested zones and pass --zones flag, e.g. eksctl create cluster --region=us-east-1 --zones=us-east-1a,us-east-1b,us-east-1d.***
   
   
 ### Kubernetes Steps
