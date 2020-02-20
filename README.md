@@ -1,6 +1,4 @@
 [![CircleCI](https://circleci.com/gh/vmbaraiya/Operationalize-a-ML-Microservice-API.svg?style=svg)](https://circleci.com/gh/vmbaraiya/Operationalize-a-ML-Microservice-API)   
-
-[![Pipeline Snapshot](https://github.com/vmbaraiya/Blue-Green-Deployment-Using-AWS-EKS/blob/master/Blue-Green_Deployment%20Pipeline.PNG)
 <p align="center">
     <h1 align="center">Blue-Green-Deployment Using CI/CD with AWS EKS</h1>
 </p>
@@ -13,6 +11,7 @@
 
 ### Project Overview
 Develop a CI/CD pipeline for micro services applications with blue/green deployment. We will also develop Continuous Integration steps as you see fit, but must at least include typographical checking (aka “linting”).
+[![Pipeline Snapshot](https://github.com/vmbaraiya/Blue-Green-Deployment-Using-AWS-EKS/blob/master/Blue-Green_Deployment%20Pipeline.PNG)
 
 ### Project Tasks
 
