@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "vmbaraiya/capstonebluegreenappimage"
+        registry = "vmbaraiya/capstonegreenappimage"
         registryCredential = 'dockerhub'
     }
     agent any
@@ -34,7 +34,7 @@ pipeline {
                 stage('Build Blue App Image'){
                     steps{
                         sh 'echo " building blue app docker image"'
-                        sh 'cd blue_appi && ./run_docker.sh'
+                        sh 'cd blue_app && ./run_docker.sh'
                     }
                 }
                 stage('Build Green App Image'){
