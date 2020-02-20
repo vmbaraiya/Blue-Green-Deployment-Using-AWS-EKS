@@ -85,6 +85,19 @@ pipeline {
             }
 
 	}
+	stage('Deploy load balancer Service'){
+            steps{
+                sh 'echo "run load balancer service"'
+                sh './run_kubernetes.sh'
+            }
+        }
+        stage("Cleaning up") {
+            steps{
+                sh 'echo "Cleaning up..."'
+                sh 'docker system prune'
+            }
+         }
+
     }
 }
 
