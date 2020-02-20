@@ -63,7 +63,24 @@ pipeline {
                 }
             }
         }
+	
+	 stage('Deploy Image to AWS Eks cluster'){
+            parallel{
+                stage('Deploy Blue App Image'){
+                    steps{
+                        sh 'echo "deploy blueapp image"'
+                        sh 'cd blue_app && ./run_kubernetes.sh'
+                    }
+                }
+                stage('Deploy Green App Image'){
+                    steps{
+                        sh 'echo "deploy greenapp image"'
+                        sh 'cd green_app && ./run_kubernetes.sh'
+                    }
+                }
+            }
 
+	}
     }
 }
 
