@@ -13,6 +13,23 @@ pipeline {
                 sh 'echo "Hadolint version $(hadolint --version)"'
             }
         }
+	stage('Lint Test'){
+            parallel{
+                stage('Blue App Lint test'){
+                    steps{
+                        sh ' echo "test blue app dockerfile"'
+                        sh 'hadolint blue_app/Dockerfile'
+                    }
+                }
+                stage('Green App Lint test'){
+                    steps{
+                        sh ' echo "test green app dockerfile"'
+                        sh 'hadolint green_app/Dockerfile'
+                    }
+                }
+            }
+        }
+
     }
 }
 
