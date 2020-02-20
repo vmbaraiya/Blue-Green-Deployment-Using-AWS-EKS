@@ -2,7 +2,7 @@
 
 [Pipeline Snapshot](https://github.com/vmbaraiya/Blue-Green-Deployment-Using-AWS-EKS/blob/master/Blue-Green_Deployment%20Pipeline.PNG)
 <p align="center">
-    <h1 align="center">.[Blue-Green-Deployment Using CI/CD with AWS EKS](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html)</h1>
+    <h1 align="center">Blue-Green-Deployment Using CI/CD with AWS EKS</h1>
 </p>
 <p align="center">
 <b>Project Overview</a></b>
@@ -103,6 +103,7 @@ kubectl logs podname
 
 ### REFERENCE
  - [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+ - [Blue/green Deployment](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html)
  - [Kubernetes](https://kubernetes.io/)
  - [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/)
  - [EKSCTL](https://eksctl.io/)
