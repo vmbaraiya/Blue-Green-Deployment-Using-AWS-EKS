@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/vmbaraiya/Operationalize-a-ML-Microservice-API.svg?style=svg)](https://circleci.com/gh/vmbaraiya/Operationalize-a-ML-Microservice-API)   
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/vmbaraiya/Blue-Green-Deployment-Using-AWS-EKS/badge)](https://securityscorecards.dev/viewer/?uri=github.com/vmbaraiya/Blue-Green-Deployment-Using-AWS-EKS)
 <p align="center">
     <h1 align="center">Blue-Green-Deployment Using CI/CD with AWS EKS</h1>
 </p>
